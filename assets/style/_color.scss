@@ -1,0 +1,18 @@
+$primary-dark:  #EBDBB8;
+$primaty-light: #F6F4EC;
+$black:         #081917;
+$button:        #677796;
+
+$color: (
+    "primary-dark": $primary-dark,
+    "primaty-light": $primaty-light,
+    "black": $black,
+    "button": $button
+)!default;
+
+@each $key, $val in $color {
+    .#{$key} {
+        background: $val;
+    }
+};
+
