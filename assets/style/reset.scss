@@ -1,2 +1,64 @@
 //import Poppins to Google font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: poppins;
+}
+
+$item: (
+    "start": start,
+    "center": center,
+    "end": end
+);
+
+@each $key, $val in $item {
+    .align-#{$key} {
+        align-items: $val;
+    }
+};
+
+$weight: (
+    "normal": normal,
+    "bold": bold,
+    "semibold": bolder,
+);
+
+@each $key, $val in $weight {
+    .font-#{$key} {
+        font-weight: $val;
+    }
+};
+
+
+.bio {
+    border-radius: 16px;
+    padding: 15px 32px;
+}
+
+figure.img {
+    margin: 0;
+}
+
+.tools img {
+    width: 84px;
+    
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+.card-social {
+    gap: 16px;
+}
+
+h3 {
+    font-size: 24px;
+}

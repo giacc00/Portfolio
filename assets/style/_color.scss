@@ -14,5 +14,9 @@ $color: (
     .#{$key} {
         background: $val;
     }
+
+    .color-#{$key} {
+        color: $val;
+    }
 };
 
