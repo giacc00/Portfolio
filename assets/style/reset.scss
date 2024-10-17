@@ -1,7 +1,6 @@
 //import Poppins to Google font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-
 *, *::after, *::before {
     margin: 0;
     padding: 0;
@@ -36,29 +35,3 @@ $weight: (
         font-weight: $val;
     }
 };
-
-
-.bio {
-    border-radius: 16px;
-    padding: 15px 32px;
-}
-
-figure.img {
-    margin: 0;
-}
-
-.tools img {
-    width: 84px;
-    
-    &:not(:last-child) {
-        margin-right: 16px;
-    }
-}
-
-.card-social {
-    gap: 16px;
-}
-
-h3 {
-    font-size: 24px;
-}

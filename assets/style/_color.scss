@@ -2,12 +2,14 @@ $primary-dark:  #EBDBB8;
 $primaty-light: #F6F4EC;
 $black:         #081917;
 $button:        #677796;
+$white:         #fff;
 
 $color: (
-    "primary-dark": $primary-dark,
-    "primaty-light": $primaty-light,
-    "black": $black,
-    "button": $button
+    "primary-dark":     $primary-dark,
+    "primaty-light":    $primaty-light,
+    "black":            $black,
+    "button":           $button,
+    "white":            $white,
 )!default;
 
 @each $key, $val in $color {
