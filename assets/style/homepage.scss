@@ -49,6 +49,12 @@ h3 {
     .project-sunnee {
         @include project($img: url('../img/sunnee.png'));
     }
+
+    .project-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 
@@ -73,5 +79,36 @@ span.btn-absolute {
     img {
         bottom: 50px;
         right: 50px;
+    }
+}
+
+.container-form {
+    border-radius: 16px 16px 0 0;
+}
+
+form {
+
+    label {
+        display: block;
+        margin-bottom: .3rem;
+    }
+
+    input {
+        padding: .3rem .4rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        border: 1px solid c.$dark;
+        border-radius: 8px;
+        background: c.$primary-light;
+    }
+}
+
+.container-button {
+    span {
+        cursor: pointer;
+        display: inline-block;
+        box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 25%);
     }
 }

@@ -1,4 +1,5 @@
 //import Poppins to Google font
+@use "color" as c;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 *, *::after, *::before {
@@ -10,7 +11,7 @@
 
 body {
     font-family: poppins;
-    background: $primary-light;
+    background: c.$primary-light;
 }
 
 $item: (
@@ -23,9 +24,13 @@ $item: (
     .align-#{$key} {
         align-items: $val;
     }
+    .text-#{$key} {
+        text-align: $val;
+    }
 };
 
 $weight: (
+    "light": lighter,
     "normal": normal,
     "bold": bold,
     "semibold": bolder,

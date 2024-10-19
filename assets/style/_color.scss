@@ -1,15 +1,19 @@
 $primary-dark:  #EBDBB8;
-$primaty-light: #F6F4EC;
+$primary-light: #F6F4EC;
 $black:         #081917;
 $button:        #677796;
 $white:         #fff;
+$blue:          #B1CCFF;
+$dark:          #B8AB90;
 
 $color: (
     "primary-dark":     $primary-dark,
-    "primaty-light":    $primaty-light,
+    "primary-light":    $primary-light,
     "black":            $black,
     "button":           $button,
     "white":            $white,
+    "blue":             $blue,
+    "dark":             $dark,
 )!default;
 
 @each $key, $val in $color {
@@ -19,6 +23,10 @@ $color: (
 
     .color-#{$key} {
         color: $val;
+    }
+
+    .border-#{$key} {
+        border: 1px solid $val;
     }
 };
 
