@@ -10,10 +10,21 @@
 </head>
 <body>
   <!-- navbar -->
-  <nav class="container-fluid primary-dark">
+  <nav class="container-fluid primary-dark p-3">
     <div class="container d-flex justify-content-around">
       <div class="d-flex align-center">
-        <figure class="">d</figure>
+        <figure class="icon me-2 mb-0">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.26 16.53">
+            <defs>
+              <style>
+                .cls-1 {fill: #0a002e;stroke-width: 0px;}
+              </style>
+            </defs>
+            <path class="cls-1" d="M8.99,16.46c.27-.02.64-.08.9-.12.1-.01.14-.13.14-.2v-2.4c0-.07.07-.13.15-.13h2.68c.29,0,.48-.27.35-.49l-1.6-2.9c-.05-.08.02-.18.13-.18h.44c.29,0,.48-.27.35-.5l-1.19-2.13c-.05-.08.02-.18.13-.18h.22c.28,0,.46-.25.35-.48L8.78.05c-.04-.08-.16-.06-.18.02,0,0,0,.02,0,.03v16.06c0,.25.11.33.39.3Z"/>
+            <path class="cls-1" d="M8.3.51v15.51c0,.28-.24.52-.52.51-4.35-.27-7.78-3.86-7.78-8.26S3.43.27,7.78,0c.28-.02.52.22.52.51Z"/>
+          </svg>
+        </figure>
         <figcaption class="navbar-brand font-bold" href="#">Edoardo Giacometti</figcaption>
       </div>
       <div class="navbar navbar-expand-lg">
@@ -27,10 +38,10 @@
               <a class="nav-link color-black font-bold" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-black font-bold" href="#">Progetti</a>
+              <a class="nav-link color-black font-bold" href="#project">Progetti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color-black font-bold" href="#">Contattami</a>
+              <a class="nav-link color-black font-bold" href="#contact">Contattami</a>
             </li>
             <li class="nav-item">
               <a class="nav-link color-black font-bold" href="#">Il mio Cv</a>
@@ -45,7 +56,7 @@
   <header>
     <div class="container-fluid">
       <section class="container">
-        <div class="pt-3 pb-3 col-6 m-auto">
+        <div class="container-text pt-3 pb-3 col-6 m-auto">
           <h1 class="text-center">
             <p>Ciao, sono <strong>Edoardo Giacometti</strong>
             e sono uno <strong>UX/UI Designer!</strong></p>
@@ -63,6 +74,44 @@
               Ritengo fondamentale, al giorno d’oggi, garantire all’utente un' <span class="font-bold">eccellente esperienza</span> nell’utilizzo di:
               siti, app, software e di qualsiasi altro prodotto digitale e non.
             </p>
+            <div class="container-icon icon-block d-flex justify-content-between">
+              <figure class="tools">
+                <h3 class="font-bold">Tools:</h3>
+                <img src="assets/img/figma.png" alt="">
+                <img src="assets/img/AI.png" alt="">
+                <img src="assets/img/Ps.png" alt="">
+                <img src="assets/img/InDesign.png" alt="">
+              </figure>
+              <div class="social">
+                <h3 class="font-bold">Mi trovi su:</h3>
+                <div class="card-social d-flex">
+                  <div class="my-card">
+                    <figure>
+                      <img src="assets/img/Linkedin.png" alt="" alt="">
+                    </figure>
+                    <figcaption class="text-center"><a href="https://www.linkedin.com/in/edoardo-giacometti?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXTeuOkXXTLizeM5YRhkEvA%3D%3D" class="color-black">Linkedin</a></figcaption>
+                  </div>
+                  <div class="my-card">
+                    <figure>
+                      <img src="assets/img/Be.png" alt="" alt="">
+                    </figure>
+                    <figcaption class="text-center"><a href="https://www.behance.net/edoardogiacometti" class="color-black">Behance</a></figcaption>
+                  </div>
+                  <div class="my-card">
+                    <figure>
+                      <img src="assets/img/Github.png" alt="" alt="">
+                    </figure>
+                    <figcaption class="text-center"><a href="https://github.com/giacc00" class="color-black">GitHub</a></figcaption>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="my-img col-3">
+            <figure class="img">
+              <img src="assets/img/img_bio.jpg" alt="This is my portrait image" title="Edoardo Giacometti">
+            </figure>
             <div class="container-icon d-flex justify-content-between">
               <figure class="tools">
                 <h3 class="font-bold">Tools:</h3>
@@ -96,11 +145,6 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <figure class="img">
-              <img src="assets/img/img_bio.jpg" alt="This is my portrait image" title="Edoardo Giacometti">
-            </figure>
-          </div>
         </article>
       </section>
     </div>
@@ -109,14 +153,14 @@
 
   <main>
     <!-- section project -->
-    <section class="container-fluid">
+    <section class="container-fluid" id="project">
       <article class="container project py-5">
         <h3>I miei progetti</h3>
         <!-- project ecodream -->
         <div class="container-project py-5 d-flex justify-content-between">
           <div class="project-eco col-6 position-relative overflow-hidden">
             <div class="title mt-3 ms-4">
-              <p class="font-bold mb-0">ecodream</p>
+              <p class="font-bold mb-0">Ecodream</p>
               <p class="mb-0">E-commerce</p>
             </div>
             <span class="btn-absolute position-absolute">
@@ -142,8 +186,8 @@
         <div class="container-project py-5 d-flex justify-content-between">
           <div class="project-final col-6 position-relative overflow-hidden order-2">
             <div class="title mt-3 ms-4">
-              <p class="font-bold mb-0">ecodream</p>
-              <p class="mb-0">E-commerce</p>
+              <p class="font-bold mb-0">Progetto finale Master UX/UI Design</p>
+              <p class="mb-0">In corso</p>
             </div>
             <span class="btn-absolute position-absolute">
               <img class="position-absolute" src="assets/img/arrow-up-right.png" alt="arrow-up-right" title="image arrow up-right">
@@ -165,8 +209,8 @@
         <div class="container-project py-5 d-flex justify-content-between">
           <div class="project-sunnee col-6 position-relative overflow-hidden">
             <div class="title mt-3 ms-4">
-              <p class="font-bold mb-0">ecodream</p>
-              <p class="mb-0">E-commerce</p>
+              <p class="font-bold mb-0">Sunnee</p>
+              <p class="mb-0">Progetto di grafica</p>
             </div>
             <span class="btn-absolute position-absolute">
               <img class="position-absolute" src="assets/img/arrow-up-right.png" alt="arrow-up-right" title="image arrow up-right">
@@ -191,12 +235,12 @@
     </section>
 
     <!-- contact me -->
-    <div class="contact-me">
+    <div class="contact-me" id="contact">
       <h3 class="text-center mb-3 font-bold">Contattami</h3>
       <section class="container-form container-fluid primary-dark pb-4">
        <article class="container pt-4">
          <div class="container-form d-flex justify-content-center mt-3">
-          <form action="" class="d-flex flex-column col-6 mt-5">
+          <form action="" class="d-flex flex-column col-8 mt-5">
             <div class="user d-flex col-12 justify-content-between">
               <!-- name -->
               <div class="name col-5">
@@ -230,7 +274,32 @@
       </section>
     </div>
   </main>
-<!-- footer -->
+  <!-- footer -->
+  <footer class="container-fluid footer">
+    <div class="container container-footer color-white col-10 d-flex justify-content-around">
+      <!-- portfolio -->
+      <div class="portfolio py-3">
+        <p class="font-bold">Portfolio</p>
+        <a href="">Home</a>
+        <a href="">Progetti</a>
+        <a href="">Contattami</a>
+        <a href="">Il mio CV</a>
+      </div>
+      <!-- social -->
+      <div class="social py-3">
+        <p class="font-bold">I miei social</p>
+        <a href="">Linkedin</a>
+        <a href="">Behance</a>
+        <a href="">GitHub</a>
+      </div>
+      <!-- live -->
+      <div class="live py-3">
+        <p class="font-bold">Dove vivo</p>
+        <i>Travedona Monate - Varese</i>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

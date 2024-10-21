@@ -1,0 +1,71 @@
+@media (0 <= width <= 425px) {
+    .container-text {
+        width: 100%;
+    }
+    article.container-bio {
+        flex-direction: column;
+
+        .bio {
+            width: 100%;
+
+            .container-icon {
+                display: none !important;
+            }
+        }
+
+        .my-img {
+            width: 100%;
+
+            figure.img {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .container-icon {
+                display: block !important;
+                flex-direction: column;
+    
+                img {
+                    width: 52px;
+                }
+            }
+        }
+    }
+
+    .container-project {
+        flex-direction: column;
+        width: 100%;
+
+        .project-eco, .project-final, .project-sunnee, .project-text {
+            width: 100%;
+        }
+        .project-final {
+            order: 1 !important;
+        }
+        .project-text.order-1 {
+            order: 2 !important;
+        }
+    }
+
+    .container-form {
+        width: 100%;
+
+        form {
+            width: 100%;
+    
+            .user {
+                flex-direction: column;
+    
+                .name, .email {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer .container-footer {
+        flex-direction: column;
+    }
+}

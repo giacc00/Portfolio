@@ -5,6 +5,7 @@ $button:        #677796;
 $white:         #fff;
 $blue:          #B1CCFF;
 $dark:          #B8AB90;
+$footer:        #322501;
 
 $color: (
     "primary-dark":     $primary-dark,
@@ -14,6 +15,7 @@ $color: (
     "white":            $white,
     "blue":             $blue,
     "dark":             $dark,
+    "footer":           $footer,
 )!default;
 
 @each $key, $val in $color {

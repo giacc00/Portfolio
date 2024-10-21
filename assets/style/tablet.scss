@@ -1,0 +1,59 @@
+@media (426px <= width <= 1024px) {
+    article.container-bio {
+        flex-direction: column;
+        width: 100%;
+
+        .bio {
+            width: 100% !important;
+        }
+
+        .container-icon {
+            display: none !important;
+        }
+
+        .my-img {
+            display: flex;
+            width: 100%;
+            gap: 16px;
+
+            .img {
+                width: 50%;
+            }
+            .container-icon {
+                display: block !important;
+
+                img, .card-social img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+    .container-project {
+        flex-direction: column;
+        width: 100%;
+
+        .project-eco, .project-final, .project-sunnee, .project-text {
+            width: 100%;
+        }
+        .project-final {
+            order: 1 !important;
+        }
+        .project-text.order-1 {
+            order: 2 !important;
+        }
+    }
+    form {
+        width: 100% !important;
+    }
+
+    .footer {
+        container-name: footer;
+        container-type: inline-size;
+    }
+
+    @container footer (max-width: 640px) {
+        .container-footer {
+            flex-direction: column;
+        }
+    }
+}

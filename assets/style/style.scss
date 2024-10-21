@@ -1,4 +1,10 @@
+// import color map
+@import "_color.css";
 @import "reset.css";
 
-@import "_color.css";
+// import page website
 @import "homepage.css";
+
+// responsive
+@import "mobile.css";
+@import "tablet.css";
