@@ -50,7 +50,7 @@
         container-name: footer;
         container-type: inline-size;
     }
-
+    // responsive only for footer
     @container footer (max-width: 640px) {
         .container-footer {
             flex-direction: column;
