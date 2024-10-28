@@ -9,37 +9,202 @@
     <link rel="stylesheet" href="assets/css/curriculum.css">
 </head>
 <body>
-    <nav class="container-fluid primary-dark p-3">
-        <div class="container d-flex justify-content-around">
-          <div class="d-flex align-center">
-            <span class="navbar-brand font-bold" href="#">Edoardo Giacometti</span>
+  <nav class="navbar navbar-expand-lg primary-dark position-sticky top-0 z-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Edoardo Giacometti</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#project">Progetti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contattami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Il mio Cv</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container-fluid py-4" aria-label="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="color-black" href="index.html">Home</a></li>
+          <li class="breadcrumb-item active before color-black" aria-current="page">Il mio CV</li>
+        </ol>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="bio d-grid">
+          <figure>
+            <img src="assets/img/img_bio.jpg" alt="" title="">
+          </figure>
+          <div class="text-header">
+            <h2>Edoardo Giacometti</h2>
+            <h3>UX/UI  Designer</h3>
           </div>
-          <div class="navbar navbar-expand-lg">
-            <div class="container-fluid d-flex">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link color-black font-bold" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-black font-bold" href="index.html#project">Progetti</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-black font-bold" href="index.html#contact">Contattami</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-black font-bold" href="">Il mio Cv</a>
-                </li>
-              </ul>
+          <div class="text-bio primary-dark rounded p-3">
+            <p>
+              Vivo in provincia di Varese, a pochi passi da Milano.
+              Sono un ragazzo preciso ed empatico, da sempre appassionato di sport, natura e videogiochi.
+              Ritengo fondamentale, al giorno d’oggi, garantire all’utente una eccellente esperienza nell’utilizzo di:
+              siti, app, software e di qualsiasi altro prodotto digitale e non.
+            </p>
+          </div>
+          <div class="icon d-flex flex-column justify-content-around">
+            <div class="social">
+              <h3 class="font-bold">Mi trovi su:</h3>
+              <img src="assets/img/Linkedin.png" alt="" title="">
+              <img src="assets/img/Be.png" alt="" title="">
+              <img src="assets/img/Github.png" alt="" title="">
             </div>
+            <div class="container-tools d-flex flex-column justify-content-between me-5">
+              <h3 class="font-bold">Tools:</h3>
+              <div class="tools">
+                <img src="assets/img/figma.png" alt="" title="">
+                <img src="assets/img/AI.png" alt="" title="">
+                <img src="assets/img/Ps.png" alt="" title="">
+                <img src="assets/img/InDesign.png" alt="" title="">
+              </div>
             </div>
           </div>
         </div>
-    </nav>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="experience d-flex gap-16">
+          <!-- formazione -->
+          <div class="container-card">
+            <h3 class="font-bold">Formazione</h3>
+            <div class="primary-dark rounded p-3">
+              <div class="text-card">
+                <p><strong>Master in UX/UI Design</strong></p>
+                <p>Start2Impact University</p>
+                <p>Febbraio 2024 -  Gennaio 2025</p>
+              </div>
+              <div>
+                <p><strong>Laurea triennale in Scienze della Comunicazione - Comunicazione digitale d’impresa.</strong><p>
+                <p>Università Telematica Internazionale Uninettuno, Roma.</p>
+                <p>Settembre 2020 -  Luglio 2023</p>
+              </div>
+            </div>
+          </div>
+          <!-- esperienze lavorative -->
+          <div class="container-card">
+            <h3 class="font-bold">Esperienze lavorative</h3>
+            <div class="primary-dark rounded p-3">
+              <div class="text-card">
+                <p><strong>Responsabile Marketing e Social Media Manager</strong></p>
+                <p>Brokery Italia | Varese (VA)</p>
+                <p>Ottobre 2023 -  In corso</p>
+              </div>
+              <div>
+                <p><strong>Social Media Manager</strong><p>
+                <p>Associazione Culturale Lombardia Segreta | Milano (MI)</p>
+                <p>Giugno 2023 - Febbraio 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- il mio percorso -->
+    <div class="container-fluid">
+      <div class="container">
+        <h3 class="font-bold">Il mio percorso</h3>
+        <div class="percorso">
+          <p>Dopo aver conseguito il diploma in Sistemi Informativi Aziendali non ho avuto fin da subito ben chiara la strada
+          da intraprendere. Immaginavo già che mi potesse piacere lavorare nel <span>mondo del digitale</span> ma, inizialmente,
+          ho pensato che l’ambito sarebbe potuto essere quello meramente informatico e della programmazione.</p>
+          <p>Decisi quindi di iscrivermi alla facoltà di informatica presso l’Università degli Studi di Varese - Uninsubria.
+          Dopo qualche mese capii però che quella <span>non era la mia strada</span>, sentivo di essere più attratto e più portato
+          per un percorso più umanistico e legato al mondo del marketing.
+          Per questo motivo decisi di iscrivermi ad una facoltà che meglio potesse conciliare i miei interessi,
+          quella di Scienze della Comunicazione, indirizzo <span>Comunicazione digitale d’impresa</span>.</p>
+          <p>Durante il percorso universitario mi sono appassionato al Social Media Marketing e Management,
+          nello specifico ai modi ed ai benefici che le aziende possono trarre da un utilizzo efficace ed efficiente dei Social,
+          raggiungendo risultati incredibili.</p>
+          <p>Per questo motivo, durante la stesura della tesi, mi sono messo alla ricerca di una <span>prima esperienza lavorativa</span>
+          inerente al mio percorso di studi, trovando l’opportunità di occuparmi della gestione delle pagine social di una
+          Associazione avente come obiettivo la promozione del territorio ed organizzazione di eventi culturali in Lombardia ed altre regioni.</p>
+          <p>Poco dopo aver conseguito ufficialmente il titolo di <span>Laurea Triennale</span> ho avuto l’occasione di, anche grazie alla breve esperienza appena citata,
+          trovare occupazione come Social Media Manager. Ben presto però, ho avuto modo di occuparmi di molto altro rispetto alla mera gestione dei social, <span>sviluppando competenze</span> anche in ambiti paralleli come Marketing e Regia.</p>
+          <p>É in questo percorso che, tra il termine del mio percorso universitario e l’inizio di quello lavorativo o scoperto e approfondito il mondo del <strong>UX/UI Design</strong>.</p>
+          <p>Mi sono fin da subito appassionato al tema, studiando e scoprendo le sue sfaccettatura in <span>autonomia</span>, per poi decidere di intraprendere un percorso accademico e pratico con il <strong>Master in UX/UI Design</strong> presso <strong>Start2Impact University</strong>.
+          Ho, in questo modo, avuto la possibilità di approfondire le  mie conoscenze teoriche e <span>far pratica</span> attraverso una lunga serie di <span>progetti reali e pratici</span> pensati per poter mettere fin da subito in pratica ciò che è stato studiato.</p>
+          <p>Sento finalmente di aver trovato la mia strada, dedicandomi ad un qualcosa che davvero amo e che voglio continuare ad approfondire e scorprire.</p>
+        </div>
+      </div>
+    </div>
+    <!-- tools/skills -->
+    <div class="container-fluid mb-5">
+      <div class="skill container d-flex">
+        <div class="skills col-8">
+          <h3>skills</h3>
+            <div class="list-skills d-flex flex-wrap justify-content-around primary-dark p-5 rounded">
+              <div class="first-block-skill">
+                <ul>
+                  <li>User Experience</li>
+                  <li>Wireframing</li>
+                  <li>User Interface</li>
+                  <li>Graphic</li>
+                </ul>
+                <ul>
+                  <li>Design</li>
+                  <li>User Test</li>
+                  <li>Copywriting</li>
+                  <li>Marketing</li>
+                </ul>
+              </div>
+              <ul>
+                <li>Research</li>
+                <li>Wireframing</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="container-fluid footer mt-5">
+    <div class="container container-footer color-white col-10 d-flex justify-content-around">
+      <!-- portfolio -->
+      <div class="portfolio py-3">
+        <h3 class="font-bold">Portfolio</h3>
+        <a href="">Home</a>
+        <a href="">Progetti</a>
+        <a href="">Contattami</a>
+        <a href="">Il mio CV</a>
+      </div>
+      <!-- social -->
+      <div class="social py-3">
+        <h3 class="font-bold">I miei social</h3>
+        <a href="">Linkedin</a>
+        <a href="">Behance</a>
+        <a href="">GitHub</a>
+      </div>
+      <!-- live -->
+      <div class="live py-3">
+        <h3 class="font-bold">Dove vivo</h3>
+        <i>Travedona Monate - Varese</i>
+      </div>
+    </div>
+  </footer>    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

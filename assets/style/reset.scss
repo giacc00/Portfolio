@@ -1,0 +1,55 @@
+//import Poppins to Google font
+@use "color" as c;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: poppins;
+    background: c.$primary-light;
+}
+
+nav {
+    background: $primary-dark;
+}
+
+$item: (
+    "start": start,
+    "center": center,
+    "end": end
+);
+
+@each $key, $val in $item {
+    .align-#{$key} {
+        align-items: $val;
+    }
+    .text-#{$key} {
+        text-align: $val;
+    }
+};
+
+$weight: (
+    "light": lighter,
+    "normal": normal,
+    "bold": bold,
+    "semibold": bolder,
+);
+
+@each $key, $val in $weight {
+    .font-#{$key} {
+        font-weight: $val;
+    }
+};
+
+.d-grid {
+    display: grid;
+}
+
+.gap-16 {
+    gap: 16px;
+}
