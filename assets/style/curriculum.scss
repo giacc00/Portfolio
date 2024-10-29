@@ -1,7 +1,7 @@
 @use "_color.scss" as c;
 @use 'footer';
 //
-@import "reset.css";
+@use "reset.css";
 
 .before::before {
     content: ">" !important;

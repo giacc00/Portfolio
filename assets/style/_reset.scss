@@ -42,6 +42,19 @@ $weight: (
     }
 };
 
+$display: (
+    "grid": grid,
+    "block": block,
+    "none": none,
+    "flex": flex,
+);
+
+@each $key, $val in $display {
+    .d-#{$key} {
+        display: $val !important;
+    }
+}
+
 .d-grid {
     display: grid;
 }

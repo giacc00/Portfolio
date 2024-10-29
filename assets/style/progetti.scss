@@ -1,0 +1,57 @@
+@use 'sass:map';
+@use '_color.scss' as c;
+@use 'footer';
+@use '_reset.scss' as r;
+
+.container-img {
+    .image {
+        img {
+            border-radius: 16px;
+        }
+    }
+}
+.img-discovery {
+    height: 142px;
+    border-radius: 16px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (0 <= width <= 768px) {
+    .container-project {
+        flex-direction: column;
+    }
+    .image {
+        flex-direction: column;
+    }
+
+    .none {
+        display: map.get(r.$display, none);
+    }
+
+    .sunne-mobile {
+        order: 1;
+    }
+    .container-button {
+        order: 3;
+        a {
+            font-size: .9em;
+        }
+    }
+
+    .ecodream {
+        order: 2;
+    }
+
+    footer .container-footer {
+        flex-direction: column;
+    }
+}
+
+@media (769px <= width <= 1024px) {
+    .image {
+        flex-direction: column;
+    }
+}
