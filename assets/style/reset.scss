@@ -49,3 +49,11 @@ $weight: (
 .gap-16 {
     gap: 16px;
 }
+
+.container-button {
+    span {
+        cursor: pointer;
+        display: inline-block;
+        box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 25%);
+    }
+}

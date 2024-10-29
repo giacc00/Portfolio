@@ -1,10 +1,11 @@
 @use 'color' as c;
+@use 'footer';
 
 .icon {
     width: 40px;
 }
 
-article.container-bio {
+.container-bio {
     .bio {
 
         p {
@@ -128,18 +129,10 @@ form {
     }
 }
 
-.container-button {
-    span {
-        cursor: pointer;
-        display: inline-block;
-        box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 25%);
-    }
-}
-
-footer {
-    a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-}
+// footer {
+//     a {
+//         display: block;
+//         color: white;
+//         text-decoration: none;
+//     }
+// }
