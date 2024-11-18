@@ -19,6 +19,18 @@
     }
 }
 
+
+.mobile {
+    container-name: button;
+    container-type: inline-size;
+
+    @container button (max-width: 500px) {
+        .container-button {
+            justify-content: center;
+        }
+    }
+}
+
 @media (0 <= width <= 768px) {
     .container-project {
         flex-direction: column;
