@@ -1,4 +1,4 @@
-@media (0 <= width <= 425px) {
+@media (0 <= width <= 430px) {
     .container-text {
         width: 100%;
     }
@@ -51,6 +51,10 @@
         span a {
             font-size: 14px;
         }
+
+        // .container-button {
+        //     justify-content: center;
+        // }
     }
 
     .container-form {
